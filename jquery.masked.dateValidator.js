@@ -9,7 +9,7 @@
     var defaults = {
         dateSelector:"#date",
         dateDelimiter:".",
-	    	dateFormat:"dmy",
+	dateFormat:"dmy",
         datePlaceholderChar:"_",
         msgSelector:"#wrong-date-msg",
         startYear:1900,   
