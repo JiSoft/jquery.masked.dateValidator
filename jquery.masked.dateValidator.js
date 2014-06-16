@@ -1,3 +1,9 @@
+/**
+ *  jquery.masked.dateValidator
+ *  Validate masked date fields in form
+ *  @link   https://github.com/JiSoft/jquery.masked.dateValidator
+ *  @author JiSoft <jisoft.dn@gmail.com>
+ */
 (function($) {
 
     var defaults = {
