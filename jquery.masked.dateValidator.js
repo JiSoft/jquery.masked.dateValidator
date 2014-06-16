@@ -6,13 +6,24 @@
 	    	dateFormat:"dmy",
         datePlaceholderChar:"_",
         msgSelector:"#wrong-date-msg",
-        startYear:1900,       
-        wrongMonth:'Month is invalid',
-        wrongDay:'Day is invalid',
-        wrongYear:'Year must be between'		
+        startYear:1900,   
+        language:'ru'
     };
 
     var options;
+    
+     var messages = {
+        'en': {
+            wrongMonth:'Month is invalid',
+            wrongDay:'Day is invalid',
+            wrongYear:'Year must be between'
+        },
+        'ru': {
+            wrongMonth:'Не существует такого месяца',
+            wrongDay:'День может быть от 01 до 31',
+            wrongYear:'Год должен быть '
+        }
+    };
 
     var methods = {
         init: function(params) {
@@ -59,13 +70,13 @@
     							$(options.msgSelector).html('');
     							done = true;
     						} else {
-    							$(options.msgSelector).html(options.wrongYear + " " + fromYear + " - " + now.getFullYear());
+    							$(options.msgSelector).html(messages[options.language].wrongYear + " " + fromYear + " - " + now.getFullYear());
     						}
     					} else {
-    						$(options.msgSelector).html(options.wrongMonth);
+    						$(options.msgSelector).html(messages[options.language].wrongMonth);
     					}
     				} else {
-    					$(options.msgSelector).html(options.wrongDay);
+    					$(options.msgSelector).html(messages[options.language].wrongDay);
     				}
     			}
     			return done;
