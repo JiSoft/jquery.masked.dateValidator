@@ -1,5 +1,5 @@
 {
-  "name": "jisoft/jquery-masked-dateValidator",
+  "name": "jisoft/jquery-masked-datevalidator",
   "description": "jQuery form's date validator",
   "type": "library",
   "keywords": ["jquery","date validator","maskedinput with date validation"],
