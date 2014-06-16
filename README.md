@@ -28,10 +28,22 @@ $("#date").mask("d9.m9.y999"/*, { placeholder: " " }*/);
 
 4. Configure date validation
 ```
+// date as d.m.Y
 $.fn.dateValidator({
  dateSelector:'#date',
  msgSelector:'#error-msg',
- dateSeparator:'.'
+ dateSeparator:'.',
+ dateFormat:'dmy'
+});
+```
+
+```
+// date as m/d/y
+$.fn.dateValidator({
+ dateSelector:'#date',
+ msgSelector:'#error-msg',
+ dateSeparator:'/',
+ dateFormat:'mdy'
 });
 ```
 
